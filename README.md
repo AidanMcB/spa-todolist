@@ -1,5 +1,6 @@
 # spa-todolist
 
+Creating a single page application using HTML, CSS and Vanilla JavaScript
 
 YouTube Video Tutorial: https://www.youtube.com/watch?v=o0QE1fQ03Cs
 
