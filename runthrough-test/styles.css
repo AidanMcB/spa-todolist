@@ -1,3 +1,50 @@
+*{
+    /* allows us to include padding and border in 
+    an elements total width and height */
+    box-sizing: border-box;
+}
+label, h1 {
+    /* top, right, bottom, left */
+    margin: 25px auto 0 5%;
+}
+h1{
+    /* Start with specific font, then then generic font 
+    families incase thr browser is not compatible with the
+    previous font */
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.new-todo-input{
+    width: 225px;
+}
+.todo-container {
+    margin: auto;
+}
+.todo-list{
+    padding: 5%;
+    list-style: none;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+} 
+.todo-div{
+    display: flex;
+    outline: 1px solid black;
+}
+.todo-li{
+    width: 93%;
+    word-wrap: break-word;
+    padding: 20px;
+}
+.del-btn{
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    color: white;
+}
 button{
     background-color: red;
 }

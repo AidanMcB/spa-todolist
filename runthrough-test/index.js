@@ -20,8 +20,14 @@ thingsToDo.map( todoItem => {
 //Add an Element
 function updateList(todoItem){
     //Create Elements
+    let newToDoDiv = document.createElement("div");
     let newToDo = document.createElement("li");
     let deleteBtn = document.createElement("button");
+
+    //Add Class Attributes
+    newToDoDiv.className = "todo-div";
+    newToDo.className = "todo-li";
+    deleteBtn.className = "del-btn";
   
     //Assign Text To Elementss
     deleteBtn.innerText = "X";
@@ -31,10 +37,11 @@ function updateList(todoItem){
     deleteBtn.addEventListener('click', () => {
         newToDo.remove();
     })
-  
+    
     //Add Elements to The DOM
-    newToDo.append(deleteBtn);
-    list.append(newToDo);
+    newToDoDiv.append(newToDo);
+    newToDoDiv.append(deleteBtn);
+    list.append(newToDoDiv);
 }
 
 
