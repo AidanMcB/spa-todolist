@@ -35,7 +35,7 @@ function updateList(todoItem){
     
     //Delete
     deleteBtn.addEventListener('click', () => {
-        newToDo.remove();
+        newToDoDiv.remove();
     })
     
     //Add Elements to The DOM
